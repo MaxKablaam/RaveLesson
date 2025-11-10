@@ -64,7 +64,7 @@ Once loaded, it behaves like any other Pd object — you can send it audio or co
 **Note:**  
 RAVE doesn’t copy or filter the input; it *reinterprets* it using what it learned.
 
-## 4. Encode / Decode Split
+### Demo 3 — Encode / Decode Split
 
 RAVE works in two steps:
 
@@ -74,7 +74,7 @@ RAVE works in two steps:
 In `nn~`, you can access these stages separately with `nn~ encode` and `nn~ decode`.  
 An audio signal can be encoded into numbers, displayed or modified, and then decoded back to sound.
 
-## 5. Exploring the Latent Space
+### Demo 4 — Exploring the Latent Space
 
 Now, remove the encoder and feed your own numbers into the decoder.  
 Try **LFOs**, **noise**, or **manual sliders**.
