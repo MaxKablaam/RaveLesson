@@ -6,8 +6,7 @@ A demonstration of creative approaches to using AI for sound, focusing on explor
 
 **What this lesson is not**
 
-A step-by-step DSP tutorial or a coding class on replicating everything exactly.  
-The goal is to spark curiosity about how machine learning can transform sound.
+A step-by-step DSP tutorial or a coding class on replicating everything exactly. The goal is to spark curiosity about how machine learning can transform sound.
 
 ## 1. What is RAVE?
 
@@ -28,6 +27,8 @@ Those numbers form the **latent space**, which we can explore to create entirely
 **PlugData** is a modern reimagining of **Pure Data (Pd)**, a visual programming language for sound.  
 It’s open-source, modular, and integrates VST plugins, making it friendlier for musicians and artists.
 
+[Plugdata can be downloaded here.](https://plugdata.org/)
+
 **Key Concepts:**
 - **Nodes (objects)** = modules or functions  
 - **Patch cords** = signal or control connections  
@@ -42,8 +43,8 @@ Feedback loops or runaway signals can damage equipment or hearing.
 2. Show how to connect and start audio.
 3. Highlight how modular patching works.
 
-If students want to learn Pd fundamentals:  
-📺 [Pure Data Lessons with Andrew Brown (YouTube)](https://www.youtube.com/watch?v=SLx7kjuFheY&list=PLuxj2jXSuTvvqYc)
+If you want to learn Pd fundamentals:  
+[Pure Data Lessons with Andrew Brown (YouTube)](https://www.youtube.com/watch?v=SLx7kjuFheY&list=PLuxj2jXSuTvvqYc)
 
 ## 3. nn~ — Using Neural Networks in Pure Data
 
@@ -58,11 +59,10 @@ Once loaded, it behaves like any other Pd object — you can send it audio or co
 ### Demo 2 — Timbre Transfer with nn~
 1. Load a pretrained RAVE model (e.g., `vintage.ts` or `sol_ordinario_fast.ts`).
 2. Route live audio or a sample into `nn~`.
-3. Play with the parameters — the output will sound similar to your input, but filtered through the “language” of the model’s training data.
+3. Play with the parameters. The output will sound similar to your input, but filtered through the model’s training data.
 
-**Conceptual Note:**  
-RAVE doesn’t copy the input; it *reinterprets* it using what it learned —  
-like an impressionist painter capturing the essence of light rather than the exact details.
+**Note:**  
+RAVE doesn’t copy or filter the input; it *reinterprets* it using what it learned.
 
 ## 4. Encode / Decode Split
 
@@ -72,14 +72,14 @@ RAVE works in two steps:
 2. **Decode** → Reconstructs audio from that vector.
 
 In `nn~`, you can access these stages separately with `nn~ encode` and `nn~ decode`.  
-Show how an audio signal can be encoded into numbers, displayed or modified, and then decoded back to sound.
+An audio signal can be encoded into numbers, displayed or modified, and then decoded back to sound.
 
 ## 5. Exploring the Latent Space
 
 Now, remove the encoder and feed your own numbers into the decoder.  
 Try **LFOs**, **noise**, or **manual sliders**.
 
-The **latent space** is what the model has learned — every coordinate produces a sound that resembles the training data but doesn’t exist in the real world.
+The **latent space** is what the model has learned. Every coordinate produces a sound that resembles the training data but doesn’t exist in the real world. You can manipulate these numbers to play the model like an instrument.
 
 **Try out:**
 - Randomize latent vectors  
