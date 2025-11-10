@@ -7,8 +7,6 @@ A demonstration of creative approaches to using AI for sound, focusing on explor
 A step-by-step DSP tutorial or a coding class on replicating everything exactly.  
 The goal is to spark curiosity about how machine learning can transform sound.
 
----
-
 ## 1. What is RAVE?
 
 **RAVE (Realtime Audio Variational autoEncoder)** is a machine-learning model for audio synthesis developed by the **ACIDS lab at IRCAM**.  
@@ -22,8 +20,6 @@ Those numbers form the **latent space**, which we can explore to create entirely
 - [RAVE GitHub](https://github.com/acids-ircam/RAVE)
 - [Pretrained Models (ACIDS)](https://acids-ircam.github.io/rave_models_download)
 - [Pretrained Models (Hugging Face)](https://huggingface.co/Intelligent-Instruments-Lab/rave-models)
-
----
 
 ## 2. PlugData Overview
 
@@ -47,8 +43,6 @@ Feedback loops or runaway signals can damage equipment or hearing.
 If students want to learn Pd fundamentals:  
 📺 [Pure Data Lessons with Andrew Brown (YouTube)](https://www.youtube.com/watch?v=SLx7kjuFheY&list=PLuxj2jXSuTvvqYc)
 
----
-
 ## 3. nn~ — Using Neural Networks in Pure Data
 
 **nn~** is a Pd/PlugData external that lets you load trained neural audio models (like RAVE).  
@@ -68,8 +62,6 @@ Once loaded, it behaves like any other Pd object — you can send it audio or co
 RAVE doesn’t copy the input; it *reinterprets* it using what it learned —  
 like an impressionist painter capturing the essence of light rather than the exact details.
 
----
-
 ## 4. Encode / Decode Split
 
 RAVE works in two steps:
@@ -79,8 +71,6 @@ RAVE works in two steps:
 
 In `nn~`, you can access these stages separately with `nn~ encode` and `nn~ decode`.  
 Show how an audio signal can be encoded into numbers, displayed or modified, and then decoded back to sound.
-
----
 
 ## 5. Exploring the Latent Space
 
