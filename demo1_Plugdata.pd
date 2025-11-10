@@ -1,0 +1,12 @@
+#N canvas 827 239 734 565 12;
+#X obj 224 1537 out~;
+#X obj 1105 1279 nn~ sol_ordinario_fast.ts forward;
+#X obj 922 1279 nn~ vintage.ts forward;
+#X obj 129 151 modules/QuickSynth;
+#X obj 129 1097 modules/QuickReverb;
+#X obj 483 1167 modules/QuickSample;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 4 1 0 1;
+#X connect 5 0 0 0;
+#X connect 5 1 0 1;
