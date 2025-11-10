@@ -8,6 +8,8 @@ A demonstration of creative approaches to using AI for sound, focusing on explor
 
 A step-by-step DSP tutorial or a coding class on replicating everything exactly. The goal is to spark curiosity about how machine learning can transform sound.
 
+You can download all of the demonstration files by clicking the "code" button in the top right corner, and then selecting "download zip".
+
 ## 1. What is RAVE?
 
 **RAVE (Realtime Audio Variational autoEncoder)** is a machine-learning model for audio synthesis developed by the **ACIDS lab at IRCAM**.  
