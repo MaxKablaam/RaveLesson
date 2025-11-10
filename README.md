@@ -1,9 +1,9 @@
 # RAVE Intro Tutorial — Exploring the Black Box
 
-## What this lesson is
+**What this lesson is**
 A demonstration of creative approaches to using AI for sound, focusing on exploration and experimentation.
 
-## What this lesson is not
+**What this lesson is not**
 A step-by-step DSP tutorial or a coding class on replicating everything exactly.  
 The goal is to spark curiosity about how machine learning can transform sound.
 
